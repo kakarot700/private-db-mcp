@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "private-db": {
+      "type": "stdio",
+      "command": "/ABSOLUTE/private-db-mcp/.venv/bin/python",
+      "args": ["-m", "private_db_mcp.server"],
+      "env": {
+        "MCP_DB_PATH": "/ABSOLUTE/private-db-mcp/demo.db",
+        "MCP_POLICY_PATH": "/ABSOLUTE/private-db-mcp/examples/policy.json",
+        "MCP_MAX_ROWS": "200"
+      }
+    }
+  }
+}

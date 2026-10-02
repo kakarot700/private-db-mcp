@@ -1,0 +1,21 @@
+........................................................................ [ 38%]
+........................................................................ [ 77%]
+.........................................                                [100%]
+------ generated xml file: /home/ubuntu/private-db-mcp/reports/junit.xml -------
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.12.3-final-0 ________________
+
+Name                             Stmts   Miss Branch BrPart  Cover   Missing
+----------------------------------------------------------------------------
+src/private_db_mcp/__init__.py       1      0      0      0   100%
+src/private_db_mcp/config.py        73      0     30      0   100%
+src/private_db_mcp/database.py     133      1     56      3    98%   63, 93->91, 96->100
+src/private_db_mcp/demo.py          36      1     10      1    96%   102
+src/private_db_mcp/models.py        47      0      0      0   100%
+src/private_db_mcp/security.py      79      0     26      0   100%
+src/private_db_mcp/server.py        41      5      2      1    86%   44, 58, 71, 81, 106
+src/private_db_mcp/service.py       86      0     24      0   100%
+----------------------------------------------------------------------------
+TOTAL                              496      7    148      5    98%
+Coverage JSON written to file reports/coverage.json
+185 passed in 10.28s

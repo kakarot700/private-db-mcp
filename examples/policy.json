@@ -1,0 +1,13 @@
+{
+  "tables": {
+    "customers": {
+      "public_columns": ["id", "status", "country_code", "created_at"]
+    },
+    "transactions": {
+      "public_columns": ["id", "customer_id", "amount_cents", "currency", "status", "created_at"]
+    },
+    "audit_logs": {
+      "public_columns": ["id", "customer_id", "event_type", "severity", "created_at"]
+    }
+  }
+}

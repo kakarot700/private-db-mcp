@@ -1,0 +1,70 @@
+{
+  "created_at_utc": "2026-10-02T14:57:32.123136+00:00",
+  "python": "3.12.3",
+  "platform": "Linux-6.18.38+-x86_64-with-glibc2.39",
+  "sqlite": "3.45.1",
+  "packages": {
+    "private-db-mcp": "1.0.0",
+    "mcp": "1.30.0",
+    "sqlglot": "28.10.1",
+    "pytest": "8.4.2",
+    "pytest-cov": "7.1.0",
+    "ruff": "0.14.14"
+  },
+  "checks": [
+    {
+      "name": "lint",
+      "command": [
+        "/home/ubuntu/private-db-mcp/.venv/bin/python",
+        "-m",
+        "ruff",
+        "check",
+        "src",
+        "tests",
+        "scripts"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "format",
+      "command": [
+        "/home/ubuntu/private-db-mcp/.venv/bin/python",
+        "-m",
+        "ruff",
+        "format",
+        "--check",
+        "src",
+        "tests",
+        "scripts"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "pytest",
+      "command": [
+        "/home/ubuntu/private-db-mcp/.venv/bin/python",
+        "-W",
+        "error",
+        "-m",
+        "pytest",
+        "-q",
+        "-W",
+        "error",
+        "--junitxml=reports/junit.xml",
+        "--cov=private_db_mcp",
+        "--cov-report=term-missing",
+        "--cov-report=json:reports/coverage.json"
+      ],
+      "returncode": 0
+    }
+  ],
+  "junit": {
+    "tests": 185,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "warnings_policy": "All Python warnings are errors in pytest and stdio test subprocesses.",
+  "warning_count": 0,
+  "all_checks_passed": true
+}

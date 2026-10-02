@@ -1,0 +1,27 @@
+{
+  "python": "3.12.13",
+  "installed_module": "/home/user/workspace/wheel-smoke/lib/python3.12/site-packages/private_db_mcp/__init__.py",
+  "wheel_smoke_passed": true,
+  "tools": [
+    "execute_safe_query",
+    "get_table_statistics",
+    "inspect_schema",
+    "verify_schema"
+  ],
+  "synthetic_customers": 120,
+  "synthetic_transactions": 360,
+  "source_unchanged": true,
+  "server_stderr_empty": true,
+  "masked_query_rows": [
+    [
+      1,
+      null,
+      null
+    ],
+    [
+      2,
+      null,
+      null
+    ]
+  ]
+}
